@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEyeSlash, faEye } from "@fortawesome/free-solid-svg-icons";
 
 function Form() {
+  //email to travamed@outlook.com
   const [formState, setFormState] = useState({
     fullName: "",
     email: "",

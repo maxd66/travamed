@@ -15,7 +15,7 @@ function Nav() {
         <h2>Logo</h2>
       </Link>
       <Link to="/form">
-        <button id="contactBtn">Contact Us</button>
+        <button id="contactBtn">Apply Now</button>
       </Link>
     </div>
   );
