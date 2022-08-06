@@ -7,7 +7,9 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div>
-      <Nav />
+      <div id="staticNav">
+        <Nav />
+      </div>
       <div className="App">
         <Routes>
           <Route path="/" element={<Main />} />

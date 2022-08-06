@@ -3,3 +3,16 @@
   height: 100px;
   justify-content: space-between;
 }
+
+#contactBtn {
+  padding: 10px;
+  margin: 5px;
+  border: solid 1px white;
+  background-color: rgb(167, 211, 250);
+  border-radius: 4px;
+}
+
+#contactBtn:hover {
+  box-shadow: inset 0px 0px 5px blue;
+  border: solid 1px blue;
+}

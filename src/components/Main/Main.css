@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+
+#hero {
+  height: 350px;
+  position: relative;
+}
+
+#heroText {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+#header {
+  margin: 5px;
+}
+
+#subtext {
+  margin: 5px;
+  font-family: "Kalam", cursive;
+  font-weight: bold;
+}
