@@ -16,7 +16,7 @@ function Main() {
       <div id="hero" style={backgroundImageStyle}>
         <section id="heroText">
           <h1 id="header">Travamed</h1>
-          <p id="subtext">Work Smarter. Travel Better</p>
+          <p id="subtext">Rewarding Careers to Build Your Future</p>
         </section>
       </div>
       <About />
