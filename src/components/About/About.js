@@ -11,9 +11,8 @@ function About() {
             We Are <span className="boldHeader">Travamed</span>
           </h2>
           <p>
-            A medical staffing agency, solely run by medical professionals. We
-            are here to be your advocates and to help you pursue your career
-            goals.
+            A medical staffing firm, solely run by medical professionals. We are
+            here to be your advocates and to help you pursue your career goals.
           </p>
         </section>
         <img id="filler1" alt="doctors in surgery" src={beachImg} />

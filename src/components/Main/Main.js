@@ -1,7 +1,6 @@
 import "./Main.css";
 import heroImg from "../../images/girlOnRock.jpg";
 import About from "../About/About";
-import Footer from "../Footer/Footer";
 
 function Main() {
   const backgroundImageStyle = {
@@ -20,7 +19,6 @@ function Main() {
         </section>
       </div>
       <About />
-      <Footer />
     </div>
   );
 }

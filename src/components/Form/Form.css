@@ -14,18 +14,18 @@
   border-radius: 2px;
 } */
 
-.formContainer input:hover {
-  background-color: aliceblue;
+#formContainer input:hover {
+  background-color: var(--formInputHover);
 }
 
 /* #firstName:hover {
   background-color: aliceblue;
 } */
 
-.formContainer input:focus {
-  background-color: aliceblue;
+#formContainer input:focus {
+  background-color: var(--formInputHover);
   border: none;
-  border: 1px solid rgb(71, 169, 255);
+  border: 1px solid var(--formInputBorder);
 }
 
 /* #firstName:focus {
@@ -34,7 +34,7 @@
   border: 1px solid rgb(71, 169, 255);
 } */
 
-.formContainer input:focus-visible {
+#formContainer input:focus-visible {
   outline: none;
 }
 
@@ -107,7 +107,7 @@
 
 .activeInput {
   border: none;
-  border: 1px solid rgb(71, 169, 255);
+  border: 1px solid var(--formInputActiveBorder);
 }
 
 .inactiveInput {
@@ -180,20 +180,31 @@
   margin-top: 50px;
 }
 
-#submit-button {
+.submit-button {
+  color: black;
+  font-size: medium;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 20px;
+  background-color: var(--formSubmitButton);
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+  caret-color: transparent;
+}
+
+.disabled-submit-button {
   color: white;
   font-size: medium;
   border: none;
   padding: 10px;
   border-radius: 15px;
   margin-top: 20px;
-  background-color: rgb(34, 34, 255);
+  background-color: #6b6869;
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-  cursor: pointer;
-  caret-color: transparent;
 }
 
-#submit-button:hover {
-  background-color: blue;
-  box-shadow: 0px 1px 3px rgb(91, 91, 255);
+.submit-button:hover {
+  background-color: #d881a6;
+  box-shadow: 0px 1px 3px #eea0c2;
 }

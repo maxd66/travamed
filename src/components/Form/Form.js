@@ -13,6 +13,7 @@ function Form() {
     phone: "",
     profession: "",
   });
+  const [submissionStatus, setSubmissionStatus] = useState("stage0");
   // const [passwordViewState, setPasswordViewState] = useState(false);
   // above state for password eye
 
@@ -36,6 +37,7 @@ function Form() {
 
   function handleFormSubmit(e) {
     e.preventDefault();
+    setSubmissionStatus("stage1");
     // const emailSubject = `Travamed Applicant: ${formState.firstName} ${formState.lastName}`;
     // const emailBody = `
     // Hi! I'm interested in applying for Travamed!
@@ -67,9 +69,13 @@ function Form() {
       .then(
         (result) => {
           console.log(result.text);
+          setSubmissionStatus("stage2");
         },
         (error) => {
           console.log(error.text);
+          alert(
+            "Oops! Something went wrong with your submission. If it continues to fail, feel free to contact us directly at travamed@outlook.com"
+          );
         }
       );
   }
@@ -153,6 +159,7 @@ function Form() {
             id="profession"
             name="profession"
             onChange={handleFormChange}
+            className={formState.profession !== "" ? "activeInput" : ""}
             value={formState.profession}
           >
             <option value="">Select Profession</option>
@@ -172,8 +179,21 @@ function Form() {
             Upload your resume:
           </label>
         </div> */}
-        <button id="submit-button" type="submit">
-          Submit
+        <button
+          id="submit-button"
+          type="submit"
+          className={
+            submissionStatus === "stage0"
+              ? "submit-button"
+              : "disabled-submit-button"
+          }
+          disabled={submissionStatus !== "stage0"}
+        >
+          {submissionStatus === "stage0"
+            ? "Submit"
+            : submissionStatus === "stage1"
+            ? "Submitting"
+            : "Success!"}
         </button>
       </form>
     </div>

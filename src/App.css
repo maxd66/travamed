@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Kalam&display=swap");
+:root {
+  --green: #aff1d5;
+  --applyNow: #eea0c2;
+  --formSubmitButton: #eea0c2;
+  --formInputHover: #dcf0e8;
+  --formInputBorder: #156845;
+  --formInputActiveBorder: #c45b88;
+  --footerBackground: darkSlateGray;
+  --subHeaderFont: "Kalam", cursive;
+  --fancyFont: "Ephesis", cursive;
+}
+
 .App {
   margin: auto;
   text-align: center;
@@ -7,13 +20,34 @@
   position: sticky;
   top: 0px;
   z-index: 9999;
-  background-color: #aff1d5;
+  background-color: var(--green);
   box-shadow: 0px 0px 5px gray;
 }
 
-body {
-  background-color: #aff1d5;
-  min-height: 100%;
+html,
+body,
+#root {
+  background-color: var(--green);
+  height: 100%;
+}
+.parentContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+#footerContainer {
+  color: white;
+  background-color: var(--footerBackground);
+  padding: 1px 0px 10px 0px;
+  flex-shrink: 0;
+  margin: auto;
+  text-align: center;
+  min-width: 100%;
 }
 
 /* @media screen and (min-width: 1200px) {
