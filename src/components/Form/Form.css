@@ -80,6 +80,30 @@
 #phone:focus + #phoneLabel {
   top: -23px;
 }
+#firstName:autofill + #firstNameLabel {
+  top: -23px;
+}
+#lastName:autofill + #lastNameLabel {
+  top: -23px;
+}
+#email:autofill + #emailLabel {
+  top: -23px;
+}
+#phone:autofill + #phoneLabel {
+  top: -23px;
+}
+#firstName:-webkit-autofill + #firstNameLabel {
+  top: -23px;
+}
+#lastName:-webkit-autofill + #lastNameLabel {
+  top: -23px;
+}
+#email:-webkit-autofill + #emailLabel {
+  top: -23px;
+}
+#phone:-webkit-autofill + #phoneLabel {
+  top: -23px;
+}
 
 .activeInput {
   border: none;

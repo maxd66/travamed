@@ -33,7 +33,7 @@ function Form() {
 
   function handleFormSubmit(e) {
     e.preventDefault();
-    const emailSubject = `Interested Party: ${formState.firstName} ${formState.lastName}`;
+    const emailSubject = `Travamed Applicant: ${formState.firstName} ${formState.lastName}`;
     const emailBody = `
     Hi! I'm interested in applying for Travamed!
     Name: ${formState.firstName} ${formState.lastName}
