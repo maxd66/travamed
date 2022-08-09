@@ -4,26 +4,45 @@
   padding: 2px;
 }
 
-#fullName {
+.formContainer input {
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   border-radius: 2px;
 }
 
-#fullName:hover {
+/* #firstName {
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border-radius: 2px;
+} */
+
+.formContainer input:hover {
   background-color: aliceblue;
 }
 
-#fullName:focus {
+/* #firstName:hover {
+  background-color: aliceblue;
+} */
+
+.formContainer input:focus {
   background-color: aliceblue;
   border: none;
   border: 1px solid rgb(71, 169, 255);
 }
 
-#fullName:focus-visible {
+/* #firstName:focus {
+  background-color: aliceblue;
+  border: none;
+  border: 1px solid rgb(71, 169, 255);
+} */
+
+.formContainer input:focus-visible {
   outline: none;
 }
 
-#nameLabel {
+/* #firstName:focus-visible {
+  outline: none;
+} */
+
+.label {
   color: darkslategray;
   position: absolute;
   padding-left: 5px;
@@ -32,14 +51,30 @@
   pointer-events: none;
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+/* #firstNameLabel {
+  color: darkslategray;
+  position: absolute;
+  padding-left: 5px;
+  width: fit-content;
+  left: 0px;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+} */
 
 #firstInputContainer {
   position: relative;
   max-width: fit-content;
   margin: auto;
+  margin-top: 30px;
 }
 
-#fullName:focus + #nameLabel {
+#firstName:focus + #firstNameLabel {
+  top: -23px;
+}
+#lastName:focus + #lastNameLabel {
+  top: -23px;
+}
+#email:focus + #emailLabel {
   top: -23px;
 }
 
@@ -53,20 +88,20 @@
   border: 1px solid darkslategray;
 }
 
-.activeNameLabel {
+.activeLabel {
   top: -23px;
 }
 
-.inactiveNameLabel {
+.inactiveLabel {
   top: 2px;
 }
-
-#emailLabel {
-  position: absolute;
-  top: -22px;
-  padding-left: 5px;
+/* .activeFirstNameLabel {
+  top: -23px;
 }
 
+.inactiveFirstNameLabel {
+  top: 2px;
+} */
 .inputContainer {
   position: relative;
   max-width: fit-content;
@@ -74,27 +109,7 @@
   margin-top: 30px;
 }
 
-#email {
-  border: 1px solid black;
-  border-radius: 5px;
-  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-#email:focus-visible {
-  outline: none;
-}
-
-#email:hover {
-  background-color: rgba(255, 255, 180, 0.562);
-}
-
-#email:focus {
-  background-color: rgba(255, 255, 180, 0.562);
-  border: 1px solid rgb(255, 255, 0);
-  box-shadow: 0px 0px 10px rgb(255, 255, 180);
-}
-
-#password {
+/* #password {
   border: none;
   border: 1px solid black;
   border-radius: 0px;
@@ -116,7 +131,7 @@
 
 #eyeIcon {
   position: inherit;
-}
+} */
 
 #submit-button {
   color: white;

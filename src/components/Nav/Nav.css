@@ -6,13 +6,28 @@
 
 #contactBtn {
   padding: 10px;
-  margin: 5px;
-  border: solid 1px white;
-  background-color: rgb(167, 211, 250);
+  margin: 15px;
+  font-size: large;
+  border: solid 1px #eea0c2;
+  background-color: #eea0c2;
   border-radius: 4px;
 }
 
 #contactBtn:hover {
-  box-shadow: inset 0px 0px 5px blue;
-  border: solid 1px blue;
+  box-shadow: inset 0px 0px 5px #eb87b2;
+  border: solid 1px #eb87b2;
+  cursor: pointer;
+}
+
+#logoImg {
+  max-width: 150px;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 2px gray;
+  transition: all ease-in-out 0.3s;
+}
+
+#logoImg:hover {
+  box-shadow: 0px 0px 4px gray;
+  cursor: pointer;
 }

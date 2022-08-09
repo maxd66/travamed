@@ -1,16 +1,17 @@
 import "./Form.css";
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEyeSlash, faEye } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faEyeSlash, faEye } from "@fortawesome/free-solid-svg-icons";
 
 function Form() {
   //email to travamed@outlook.com
   const [formState, setFormState] = useState({
-    fullName: "",
+    firstName: "",
+    lastName: "",
     email: "",
-    password: "",
   });
-  const [passwordViewState, setPasswordViewState] = useState(false);
+  // const [passwordViewState, setPasswordViewState] = useState(false);
+  // above state for password eye
 
   function handleFormChange(e) {
     e.preventDefault();
@@ -22,15 +23,16 @@ function Form() {
     });
   }
 
-  function passwordViewHandler(e) {
-    e.preventDefault();
-    setPasswordViewState(!passwordViewState);
-  }
+  // For password eye click event
+  // function passwordViewHandler(e) {
+  //   e.preventDefault();
+  //   setPasswordViewState(!passwordViewState);
+  // }
 
   function handleFormSubmit(e) {
     e.preventDefault();
     alert(
-      `You submitted the form with the values, ${formState.fullName}, ${formState.email}, ${formState.password}`
+      `You submitted the form with the values, ${formState.fullName}, ${formState.lastName}, ${formState.email}`
     );
   }
   return (
@@ -38,49 +40,57 @@ function Form() {
       <form id="formContainer" onSubmit={handleFormSubmit}>
         <div id="firstInputContainer">
           <input
-            id="fullName"
-            name="fullName"
-            className={formState.fullName ? "activeInput" : "inactiveInput"}
+            id="firstName"
+            name="firstName"
+            className={formState.firstName ? "activeInput" : "inactiveInput"}
             onChange={handleFormChange}
-            value={formState.fullName}
+            value={formState.firstName}
           />
           <label
-            htmlFor="name"
-            id="nameLabel"
+            htmlFor="firstName"
+            id="firstNameLabel"
             className={
-              formState.fullName ? "activeNameLabel" : "inactiveNameLabel"
+              formState.firstName ? "activeLabel label" : "inactiveLabel label"
             }
           >
-            Full Name
+            First Name
           </label>
         </div>
         <div className="inputContainer">
-          <label htmlFor="email" id="emailLabel">
-            Email
+          <input
+            id="lastName"
+            name="lastName"
+            className={formState.lastName ? "activeInput" : "inactiveInput"}
+            onChange={handleFormChange}
+            value={formState.lastName}
+          />
+          <label
+            htmlFor="lastName"
+            id="lastNameLabel"
+            className={
+              formState.lastName ? "activeLabel label" : "inactiveLabel label"
+            }
+          >
+            Last Name
           </label>
+        </div>
+        <div className="inputContainer">
           <input
             id="email"
             name="email"
+            className={formState.firstName ? "activeInput" : "inactiveInput"}
             onChange={handleFormChange}
-            value={formState.email}
+            value={formState.firstName}
           />
-        </div>
-        <div className="inputContainer">
-          <input
-            id="password"
-            name="password"
-            type={passwordViewState ? "text" : "password"}
-            onChange={handleFormChange}
-            value={formState.password}
-            placeholder="Password"
-          />
-          <div id="eyeIconContainer" onClick={passwordViewHandler}>
-            {passwordViewState ? (
-              <FontAwesomeIcon id="eyeIcon" icon={faEyeSlash} />
-            ) : (
-              <FontAwesomeIcon id="eyeIcon" icon={faEye} />
-            )}
-          </div>
+          <label
+            htmlFor="email"
+            id="emailLabel"
+            className={
+              formState.email ? "activeLabel label" : "inactiveLabel label"
+            }
+          >
+            Email
+          </label>
         </div>
         <button id="submit-button" type="submit">
           Submit

@@ -1,11 +1,11 @@
 import "./About.css";
-import surgeryImg from "../../images/surgery.jpg";
+import beachImg from "../../images/beach.jpg";
 import campingImg from "../../images/camping.jpg";
 
 function About() {
   return (
     <div id="aboutContainer">
-      <container className="flex-container">
+      <section className="flex-container">
         <section id="mainAbout" className="about-section">
           <h2 className="about-header">
             We Are <span className="boldHeader">Travamed</span>
@@ -16,9 +16,9 @@ function About() {
             goals.
           </p>
         </section>
-        <img id="filler1" alt="doctors in surgery" src={surgeryImg} />
-      </container>
-      <container className="flex-container">
+        <img id="filler1" alt="doctors in surgery" src={beachImg} />
+      </section>
+      <section className="flex-container">
         <img id="filler2" alt="people camping" src={campingImg} />
         <section id="subAbout" className="about-section">
           <h3 id="headerRight" className="about-header">
@@ -30,7 +30,7 @@ function About() {
             and making memories that will last a lifetime.
           </p>
         </section>
-      </container>
+      </section>
     </div>
   );
 }
