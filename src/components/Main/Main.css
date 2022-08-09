@@ -1,14 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
 
 #hero {
-  height: 350px;
+  max-width: 1600px;
+  height: 600px;
   position: relative;
+  margin: auto;
 }
 
 #heroText {
+  text-align: left;
   position: absolute;
-  top: 20px;
+  font-size: x-large;
+  top: 40px;
   left: 30px;
+  transition: all ease-in-out 0.3s;
 }
 
 #header {
@@ -19,4 +24,12 @@
   margin: 5px;
   font-family: "Kalam", cursive;
   font-weight: bold;
+}
+
+@media screen and (min-width: 700px) {
+  #heroText {
+    font-size: xx-large;
+    top: 100px;
+    left: 140px;
+  }
 }

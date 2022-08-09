@@ -1,20 +1,36 @@
+import "./About.css";
+import surgeryImg from "../../images/surgery.jpg";
+import campingImg from "../../images/camping.jpg";
+
 function About() {
   return (
-    <div>
-      <section id="mainAbout" className="about-section">
-        <h2 className="about-header">We Are Travamed</h2>
-        <p>
-          Lorem Ipsum some text just to fill the space and see what it would
-          look like with actual text filled in here
-        </p>
-      </section>
-      <section id="subAbout" className="about-section">
-        <h3 className="about-header">Subheader</h3>
-        <p>
-          More text whatever info you want here. Maybe a mission statement,
-          maybe something else IDK.
-        </p>
-      </section>
+    <div id="aboutContainer">
+      <container className="flex-container">
+        <section id="mainAbout" className="about-section">
+          <h2 className="about-header">
+            We Are <span className="boldHeader">Travamed</span>
+          </h2>
+          <p>
+            A medical staffing agency, solely run by medical professionals. We
+            are here to be your advocates and to help you pursue your career
+            goals.
+          </p>
+        </section>
+        <img id="filler1" alt="doctors in surgery" src={surgeryImg} />
+      </container>
+      <container className="flex-container">
+        <img id="filler2" alt="people camping" src={campingImg} />
+        <section id="subAbout" className="about-section">
+          <h3 id="headerRight" className="about-header">
+            <span className="boldHeader">Get More</span>
+            <br></br>from Your Career
+          </h3>
+          <p>
+            Experience the beauty of traveling the country, meeting new people,
+            and making memories that will last a lifetime.
+          </p>
+        </section>
+      </container>
     </div>
   );
 }
