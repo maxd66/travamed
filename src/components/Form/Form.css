@@ -77,6 +77,9 @@
 #email:focus + #emailLabel {
   top: -23px;
 }
+#phone:focus + #phoneLabel {
+  top: -23px;
+}
 
 .activeInput {
   border: none;
@@ -132,6 +135,26 @@
 #eyeIcon {
   position: inherit;
 } */
+
+#profession {
+  padding: 4px;
+}
+
+#resumeLabel {
+  background-color: white;
+  padding: 3px;
+  border-radius: 2px;
+  position: absolute;
+  top: -29px;
+  left: 0px;
+  color: darkslategray;
+  border: solid 1px gray;
+  min-width: fit-content;
+}
+
+.resumeInputContainer {
+  margin-top: 50px;
+}
 
 #submit-button {
   color: white;

@@ -9,6 +9,8 @@ function Form() {
     firstName: "",
     lastName: "",
     email: "",
+    phone: "",
+    profession: "",
   });
   // const [passwordViewState, setPasswordViewState] = useState(false);
   // above state for password eye
@@ -31,8 +33,15 @@ function Form() {
 
   function handleFormSubmit(e) {
     e.preventDefault();
-    alert(
-      `You submitted the form with the values, ${formState.fullName}, ${formState.lastName}, ${formState.email}`
+    const emailSubject = `Interested Party: ${formState.firstName} ${formState.lastName}`;
+    const emailBody = `
+    Hi! I'm interested in applying for Travamed!
+    Name: ${formState.firstName} ${formState.lastName}
+    Email: ${formState.email}
+    Phone Number: ${formState.phone}
+    Profession: ${formState.profession}`;
+    window.open(
+      `mailto:travamed@outlook.com?subject=${emailSubject}&body=${emailBody}`
     );
   }
   return (
@@ -78,9 +87,9 @@ function Form() {
           <input
             id="email"
             name="email"
-            className={formState.firstName ? "activeInput" : "inactiveInput"}
+            className={formState.email ? "activeInput" : "inactiveInput"}
             onChange={handleFormChange}
-            value={formState.firstName}
+            value={formState.email}
           />
           <label
             htmlFor="email"
@@ -92,6 +101,48 @@ function Form() {
             Email
           </label>
         </div>
+        <div className="inputContainer">
+          <input
+            id="phone"
+            name="phone"
+            className={formState.phone ? "activeInput" : "inactiveInput"}
+            onChange={handleFormChange}
+            value={formState.phone}
+          />
+          <label
+            htmlFor="phone"
+            id="phoneLabel"
+            className={
+              formState.phone ? "activeLabel label" : "inactiveLabel label"
+            }
+          >
+            Phone Number
+          </label>
+        </div>
+        <div className="inputContainer">
+          <select
+            id="profession"
+            name="profession"
+            onChange={handleFormChange}
+            value={formState.profession}
+          >
+            <option value="">Select Profession</option>
+            <option value="Registered Nurse">Registered Nurse</option>
+            <option value="Respiratory Therapist">Respiratory Therapist</option>
+            <option value="Dialysis Technician">Dialysis Technician</option>
+            <option value="Licensed Practical Nurse">
+              Licensed Practical Nurse
+            </option>
+            <option value="Surgical Tech/OR Tech">Surgical Tech/OR Tech</option>
+            <option value="CNA">CNA</option>
+          </select>
+        </div>
+        {/* <div className="inputContainer resumeInputContainer">
+          <input type="file" id="resume" name="resume" />
+          <label id="resumeLabel" htmlFor="resume">
+            Upload your resume:
+          </label>
+        </div> */}
         <button id="submit-button" type="submit">
           Submit
         </button>
