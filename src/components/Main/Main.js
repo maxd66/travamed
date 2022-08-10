@@ -1,5 +1,4 @@
 import "./Main.css";
-import heroImg from "../../images/girlOnRock.jpg";
 import About from "../About/About";
 
 function Main() {

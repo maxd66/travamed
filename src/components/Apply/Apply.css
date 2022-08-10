@@ -23,9 +23,6 @@
   border-radius: 15px;
   padding: 10px;
   box-shadow: 0px 0px 3px gray;
-  background-image: url("../../images/natureGuy.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
 #formCard {
