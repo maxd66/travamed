@@ -3,11 +3,11 @@ import Form from "../Form/Form";
 // import natureGuy from "../../images/natureGuy.jpg";
 
 function Apply() {
-  // const backgroundImgStyling = {
-  //   backgroundImage: `url(${natureGuy})`,
-  //   backgroundSize: "cover",
-  //   backgroundPosition: "center",
-  // };
+  //   const backgroundImgStyling = {
+  //     backgroundImage: `url(${natureGuy})`,
+  //     backgroundSize: "cover",
+  //     backgroundPosition: "center",
+  //   };
   return (
     <div id="applyContainer">
       <div id="applyHeader">

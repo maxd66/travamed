@@ -23,6 +23,9 @@
   border-radius: 15px;
   padding: 10px;
   box-shadow: 0px 0px 3px gray;
+  background-image: url("../../images/natureGuy.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 #formCard {
@@ -43,37 +46,29 @@
 
   #greenStrip {
     background-color: var(--green);
-    background-image: none;
   }
 
   #applyFlex {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-bottom: 20px;
   }
 
   #formGraphic {
     display: block;
-    max-width: calc(100vw - 60vw);
+    max-width: calc(100vw - 40vw);
     border-radius: 15px;
   }
 
   #formCard {
-    min-width: 300px;
-  }
-
-  #whiteStrip {
-    margin: 0;
+    min-width: 600px;
   }
 }
 @media screen and (min-width: 1200px) {
   #applyContainer {
     margin-top: calc(100vh - 90vh);
     flex-direction: row;
-    justify-content: space-evenly;
-  }
-  #formCard {
-    min-width: 500px;
+    justify-content: center;
   }
 }
