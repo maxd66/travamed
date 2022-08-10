@@ -9,6 +9,7 @@
   --footerBackground: darkSlateGray;
   --subHeaderFont: "Kalam", cursive;
   --fancyFont: "Ephesis", cursive;
+  --smallFormLabelDistance: -23px;
 }
 
 .App {

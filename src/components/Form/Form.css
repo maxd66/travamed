@@ -69,40 +69,40 @@
 }
 
 #firstName:focus + #firstNameLabel {
-  top: -23px;
+  top: var(--smallFormLabelDistance);
 }
 #lastName:focus + #lastNameLabel {
-  top: -23px;
+  top: var(--smallFormLabelDistance);
 }
 #email:focus + #emailLabel {
-  top: -23px;
+  top: var(--smallFormLabelDistance);
 }
 #phone:focus + #phoneLabel {
-  top: -23px;
+  top: var(--smallFormLabelDistance);
 }
 #firstName:autofill + #firstNameLabel {
-  top: -23px;
+  top: var(--smallFormLabelDistance);
 }
 #lastName:autofill + #lastNameLabel {
-  top: -23px;
+  top: var(--smallFormLabelDistance);
 }
 #email:autofill + #emailLabel {
-  top: -23px;
+  top: var(--smallFormLabelDistance);
 }
 #phone:autofill + #phoneLabel {
-  top: -23px;
+  top: var(--smallFormLabelDistance);
 }
 #firstName:-webkit-autofill + #firstNameLabel {
-  top: -23px;
+  top: var(--smallFormLabelDistance);
 }
 #lastName:-webkit-autofill + #lastNameLabel {
-  top: -23px;
+  top: var(--smallFormLabelDistance);
 }
 #email:-webkit-autofill + #emailLabel {
-  top: -23px;
+  top: var(--smallFormLabelDistance);
 }
 #phone:-webkit-autofill + #phoneLabel {
-  top: -23px;
+  top: var(--smallFormLabelDistance);
 }
 
 .activeInput {

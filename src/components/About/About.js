@@ -19,8 +19,7 @@ function About() {
         {/* <img id="filler2" alt="people camping" src={campingImg} /> */}
         <section id="subAbout" className="about-section">
           <h3 id="headerRight" className="about-header">
-            Get More
-            <br></br>from Your Career
+            Get More from Your Career
           </h3>
           <p>
             Experience the beauty of traveling the country, meeting new people,
