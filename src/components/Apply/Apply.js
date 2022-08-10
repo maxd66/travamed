@@ -1,22 +1,22 @@
 import "./Apply.css";
 import Form from "../Form/Form";
-import cherryBlossom from "../../images/cherryBlossom.jpg";
+import natureGuy from "../../images/natureGuy.jpg";
 
 function Apply() {
-  const backgroundImgStyling = {
-    backgroundImage: `url(${cherryBlossom})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  };
+  // const backgroundImgStyling = {
+  //   backgroundImage: `url(${natureGuy})`,
+  //   backgroundSize: "cover",
+  //   backgroundPosition: "center",
+  // };
   return (
     <div id="applyContainer">
       <div id="applyHeader">
-        <h2>Your Best Life</h2>
-        <h2>Starts Here</h2>
+        <h2>Connect With Us!</h2>
       </div>
       <div id="applyFlex">
+        <img id="formGraphic" alt="man near cliff at sunset" src={natureGuy} />
         <div id="whiteStrip">
-          <div id="greenStrip" style={backgroundImgStyling}>
+          <div id="greenStrip">
             <div id="formCard">
               <Form />
             </div>

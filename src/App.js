@@ -15,7 +15,7 @@ function App() {
         <div className="App">
           <Routes>
             <Route path="/" element={<Main />} />
-            <Route path="/form" element={<Apply />} />
+            <Route path="/contact" element={<Apply />} />
           </Routes>
         </div>
       </div>

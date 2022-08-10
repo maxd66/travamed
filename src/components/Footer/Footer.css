@@ -1,3 +1,15 @@
 #footerLink {
   color: aliceblue;
 }
+
+@media screen and (min-width: 500px) {
+  #footerFlex {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footerSection {
+    text-align: left;
+    margin: 10px;
+  }
+}

@@ -8,7 +8,7 @@ function Nav() {
       <Link to="/">
         <img id="logoImg" alt="mountain travamed logo" src={travamedLogo} />
       </Link>
-      <Link to="/form">
+      <Link to="/contact">
         <button id="contactBtn">Apply Now</button>
       </Link>
     </div>

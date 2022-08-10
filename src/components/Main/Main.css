@@ -3,6 +3,10 @@
   height: 600px;
   position: relative;
   margin: auto;
+  background-image: url("../../images/girlOnRock.jpg");
+  background-size: "cover";
+  background-attachment: "fixed";
+  background-position: "80%";
 }
 
 #heroText {
@@ -56,6 +60,7 @@
 @media screen and (min-height: 1000px) {
   #hero {
     height: 900px;
+    background-position: 68%;
   }
 }
 @media screen and (min-height: 1400px) {
