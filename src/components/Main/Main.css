@@ -57,7 +57,7 @@
   }
 }
 
-@media screen and (min-height: 1000px) {
+@media screen and (min-height: 500px) {
   #hero {
     height: 900px;
     background-position: 68%;

@@ -1,5 +1,6 @@
 import "./Footer.css";
 import { SocialIcon } from "react-social-icons";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -16,9 +17,9 @@ function Footer() {
         </div>
         <div id="contactSection" className="footerSection">
           <h4 id="footerHeader">Have Questions?</h4>
-          <a href="/contact" id="footerLink">
+          <Link to="/contact" id="footerLink">
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
     </div>

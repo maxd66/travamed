@@ -1,6 +1,6 @@
 import "./Apply.css";
 import Form from "../Form/Form";
-import natureGuy from "../../images/natureGuy.jpg";
+// import natureGuy from "../../images/natureGuy.jpg";
 
 function Apply() {
   // const backgroundImgStyling = {
@@ -14,7 +14,7 @@ function Apply() {
         <h2>Connect With Us!</h2>
       </div>
       <div id="applyFlex">
-        <img id="formGraphic" alt="man near cliff at sunset" src={natureGuy} />
+        {/* <img id="formGraphic" alt="man near cliff at sunset" src={natureGuy} /> */}
         <div id="whiteStrip">
           <div id="greenStrip">
             <div id="formCard">

@@ -48,7 +48,19 @@
     border-radius: 10px;
   }
 
+  .about-header {
+    font-size: 1.5em;
+  }
+
   #mainAbout {
+    font-size: 1.5em;
+  }
+
+  #subAbout {
+    font-size: 1.5em;
+  }
+
+  /* #mainAbout {
     padding-left: 3em;
     text-align: left;
   }
@@ -56,5 +68,5 @@
   #subAbout {
     padding-right: 3em;
     text-align: right;
-  }
+  } */
 }
