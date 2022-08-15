@@ -8,7 +8,7 @@ function About() {
       <section className="flex-container">
         <section id="mainAbout" className="about-section">
           <h2 className="about-header">Who Are We</h2>
-          <p>
+          <p className="about-p">
             A medical staffing firm, solely run by medical professionals. We are
             here to be your advocates and to help you pursue your career goals.
           </p>
@@ -21,7 +21,7 @@ function About() {
           <h3 id="headerRight" className="about-header">
             Get More from Your Career
           </h3>
-          <p>
+          <p className="about-p">
             Experience the beauty of traveling the country, meeting new people,
             and making memories that will last a lifetime.
           </p>

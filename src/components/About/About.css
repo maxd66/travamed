@@ -5,6 +5,11 @@
 .about-header {
   font-family: var(--subHeaderFont);
   padding: 0em 1em;
+  margin-bottom: 0px;
+}
+
+.about-p {
+  margin-top: 0px;
 }
 
 .flex-container {
@@ -46,10 +51,6 @@
     max-width: 40%;
     display: block;
     border-radius: 10px;
-  }
-
-  .about-header {
-    font-size: 1.5em;
   }
 
   #mainAbout {
